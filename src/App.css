@@ -10,13 +10,16 @@
 
 body {
   background-color: rgb(250, 245, 239);
-}
-
-.App {
-  text-align: center;
-}
-
-.name {
   font-family: 'NATS';
 }
+
+.Intro {
+  padding: 5em;
+}
+
+h1 {
+  font-size: 6em;
+}
+
+
 

@@ -1,9 +1,10 @@
+import Home from './containers/Home'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1 className="name">ALLENE NORTON</h1>
+      <Home />
     </div>
   );
 }
