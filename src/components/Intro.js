@@ -1,13 +1,19 @@
 import { Animated } from "react-animated-css";
 import React, { Component } from 'react'
+import Typist from 'react-typist';
+
 
 class Intro extends Component {
     state = {
-        show: "none"
+        show: "none",
+        showDesc: "none"
     }
 
     setShow = () => {
         setTimeout(() => { this.setState({ show: "inline" }) }, 2000)
+    }
+    setShowDesc = () => {
+        setTimeout(() => { this.setState({ showDesc: "inline" }) }, 3000)
     }
     render() {
         return (
@@ -30,7 +36,15 @@ class Intro extends Component {
                         isVisible={true}>
                         <p>NORTON</p>
                     </Animated>
+                    {this.setShowDesc()}
+                    <div className="intro-desc" style={{ display: this.state.showDesc }}>
+                        <Typist avgTypingDelay={35}>
+                            <Typist.Delay ms={3500} />
+                            Full stack developer focused on creating smooth applications with clean design.
+                    </Typist>
+                    </div>
                 </div>
+
             </div>
         );
     }

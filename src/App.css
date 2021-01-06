@@ -26,8 +26,13 @@ body {
   font-weight: bold;
   margin-top: -2em;
   margin-left: -.05em;
+  margin-bottom: 0%;
 }
 
+.intro-desc {
+  font-size: 2em;
+  margin-top: -3em;
+}
 
 
 
