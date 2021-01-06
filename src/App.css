@@ -10,16 +10,24 @@
 
 body {
   background-color: rgb(250, 245, 239);
-  font-family: 'NATS';
 }
 
 .Intro {
   padding: 5em;
+  font-family: 'NATS';
 }
 
-h1 {
+.firstname h1 {
   font-size: 6em;
 }
+
+.lastname p {
+  font-size: 6em;
+  font-weight: bold;
+  margin-top: -2em;
+  margin-left: -.05em;
+}
+
 
 
 
