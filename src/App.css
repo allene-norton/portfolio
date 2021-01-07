@@ -164,3 +164,7 @@ ul {
   color: rgb(11, 73, 58);
   transition-duration: 500ms;
 }
+
+.gif {
+  width: 65%;
+}
