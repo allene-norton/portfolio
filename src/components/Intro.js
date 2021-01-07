@@ -4,17 +4,19 @@ import Typist from 'react-typist';
 
 
 class Intro extends Component {
-    state = {
-        show: "none",
-        showDesc: "none"
-    }
+    // state = {
+    //     show: "none",
+    //     showDesc: "none"
+    // }
 
-    setShow = () => {
-        setTimeout(() => { this.setState({ show: "inline" }) }, 2000)
-    }
-    setShowDesc = () => {
-        setTimeout(() => { this.setState({ showDesc: "inline" }) }, 3000)
-    }
+    // setShow = () => {
+    //     setTimeout(() => { this.setState({ show: "inline" }) }, 2000)
+    //     clearTimeout()
+    // }
+    // setShowDesc = () => {
+    //     setTimeout(() => { this.setState({ showDesc: "inline" }) }, 3000)
+    //     clearTimeout()
+    // }
     render() {
         return (
             <div className="Intro">
@@ -27,26 +29,29 @@ class Intro extends Component {
                         <h1>ALLENE</h1>
                     </Animated>
                 </div>
-                {this.setShow()}
-                <div className="lastname" style={{ display: this.state.show }}>
+                {/* {this.setShow()} */}
+                <div >
                     <Animated
-                        animationIn="slideInDown"
+                        className="lastname"
+                        animationIn="slideInLeft"
+                        animationInDelay={1000}
                         animationInDuration={1000}
                         isVisible={true}>
                         <p>NORTON</p>
                     </Animated>
-                    {this.setShowDesc()}
-                    <div className="intro-desc" style={{ display: this.state.showDesc }}>
-                        <Typist avgTypingDelay={35}>
-                            <Typist.Delay ms={3500} />
+                    {/* {this.setShowDesc()} */}
+                    <div className="intro-desc">
+                        <Typist avgTypingDelay={30}>
+                            <Typist.Delay ms={3000} />
                             Full stack developer focused on creating smooth applications with clean design.
                     </Typist>
                     </div>
                 </div>
-
             </div>
         );
     }
 }
 
 export default Intro;
+
+// style={{ display: this.state.showDesc }}
