@@ -21,7 +21,6 @@ class Intro extends Component {
                 <div className="firstname">
                     <Animated
                         animationIn="slideInDown"
-                        // animationInDelay={2000}
                         animationInDuration={1000}
                         animationOut="fadeOut"
                         isVisible={true}>
