@@ -4,6 +4,8 @@ import ReactPageScroller from "react-page-scroller";
 import Intro from '../components/Intro'
 import About from '../components/About'
 import Tech from '../components/Tech'
+import Projects from '../components/Projects'
+
 
 import "./home.css";
 
@@ -36,6 +38,7 @@ export default class FullPage extends React.Component {
                     <Intro />
                     <About />
                     <Tech />
+                    <Projects />
                 </ReactPageScroller>
             </React.Fragment>
         );

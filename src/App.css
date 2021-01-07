@@ -111,3 +111,56 @@ td {
   /* padding-right: 3em; */
 }
 
+.Projects {
+  padding-left: 5em;
+  padding-right: 5em;
+  text-align: center;
+  display: flex;
+}
+
+.project-bar p {
+  font-size: 5em;
+  font-family: 'NATS';
+  margin: 0%;
+}
+
+.show-project p {
+  font-size: 5em;
+  font-family: 'NATS';
+  margin: auto;
+}
+
+.Projects .project-desc p {
+  font-family: 'Broadsheet-LDO';
+  font-size: 1em;
+  line-height: 125%;
+}
+
+.project-bar {
+  text-align: left;
+  flex: 1;
+  padding-right: 10%;
+}
+
+.project-disp {
+  flex: 1;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.project-btn {
+  outline: none;
+  border:none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 1em;
+  font-family: 'Broadsheet-LDO';
+  font-size: 2em;
+}
+
+.project-btn:hover {
+  color: rgb(11, 73, 58);
+  transition-duration: 500ms;
+}
