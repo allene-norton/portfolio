@@ -10,7 +10,7 @@ class Intro extends Component {
                 <div className="firstname">
                     <Animated
                         animationIn="slideInDown"
-                        animationInDuration={1000}
+                        animationInDuration={600}
                         animationOut="fadeOut"
                         isVisible={true}>
                         <p>ALLENE</p>
@@ -21,8 +21,8 @@ class Intro extends Component {
                     <Animated
                         className="lastname"
                         animationIn="slideInLeft"
-                        animationInDelay={1000}
-                        animationInDuration={1700}
+                        animationInDelay={600}
+                        animationInDuration={600}
                         isVisible={true}>
                         <p>NORTON</p>
                     </Animated>
@@ -30,19 +30,18 @@ class Intro extends Component {
                     <div className="intro-desc">
                         <Animated
                             animationIn="fadeIn"
-                            animationInDelay={1800}
+                            animationInDelay={1200}
                             animationInDuration={1000}
                             isVisible={true}>
                             <Typist
-                                avgTypingDelay={50}
-                                startDelay={3000}
+                                avgTypingDelay={35}
+                                startDelay={2200}
                                 cursor={{
                                     hideWhenDone: true,
                                     hideWhenDoneDelay: 5000
                                 }}>
-                                {/* <Typist.Delay ms={3000} /> */}
-                            Full stack developer focused on creating smooth applications with clean design.
-                    </Typist>
+                                Full stack developer focused on creating smooth applications with clean design.
+                            </Typist>
                         </Animated>
                     </div>
                 </div>

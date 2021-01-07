@@ -48,5 +48,66 @@ body {
   margin-top: -2em;
 }
 
+.About {
+  padding-left: 5em;
+  padding-right: 5em;
+}
 
+.About h1 {
+  font-size: 5em;
+  font-family: 'NATS';
+}
+.About {
+  position: absolute;
+}
+
+.About:after {
+  content:'';
+  background: url('./Images/allene-bw.jpg') no-repeat center;
+  background-size: cover;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  width:100%;
+  height:100%;
+  z-index:-1;
+  opacity: 0.17; /* Here is your opacity */
+}
+.About p {
+  font-family: 'Broadsheet-LDO';
+  font-size: 2em;
+  line-height: 125%;
+}
+
+.Tech {
+  padding-left: 5em;
+  padding-right: 5em;
+  text-align: center;
+}
+
+.Tech h1 {
+  font-size: 5em;
+  font-family: 'NATS';
+  margin-bottom: 0%;
+}
+
+table {
+  margin: auto;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  font-family: 'NATS';
+  font-weight: 800;
+  font-size: 3em;
+  text-decoration: underline;
+  /* padding-right: 3em; */
+}
+
+td {
+  font-family: 'Broadsheet-LDO';
+  font-size: 2.5em;
+  /* padding-right: 3em; */
+}
 

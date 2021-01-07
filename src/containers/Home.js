@@ -31,7 +31,7 @@ export default class FullPage extends React.Component {
                     // customPageNumber={this.state.currentPage}
                     animationTimer={400}
                     animationTimerBuffer={500}
-                    renderAllPagesOnFirstRender={true}
+                // renderAllPagesOnFirstRender={true}
                 >
                     <Intro />
                     <About />
