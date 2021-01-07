@@ -26,7 +26,7 @@ const Tech = (props) => {
                         {/* {body} */}
                         <tr>
                             <td>React</td>
-                            <td>NodeJS</td>
+                            <td>Node</td>
                             <td>Illustrator</td>
                         </tr>
                         <tr>
