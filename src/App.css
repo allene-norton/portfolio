@@ -8,6 +8,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Broadsheet-LDO';
+  src:url('/src/fonts/Broadsheet-LDO.ttf.woff') format('woff'),
+      url('/src/fonts/Broadsheet-LDO.ttf.svg#Broadsheet-LDO') format('svg'),
+      url('/src/fonts/Broadsheet-LDO.ttf.eot'),
+      url('/src/fonts/Broadsheet-LDO.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
   background-color: rgb(250, 245, 239);
 }
@@ -17,19 +28,22 @@ body {
   font-family: 'NATS';
 }
 
-.firstname h1 {
+.firstname p {
+  font-weight: semi-bold;
   font-size: 6em;
+  margin-bottom: 0.5em;
 }
 
 .lastname p {
   font-size: 6em;
-  font-weight: bold;
+  font-weight: semi-bold;
   margin-top: -2em;
   margin-left: -.05em;
-  margin-bottom: 0%;
+  margin-bottom: 1em;
 }
 
 .intro-desc {
+  font-family: 'Broadsheet-LDO';
   font-size: 2em;
   margin-top: -2em;
 }

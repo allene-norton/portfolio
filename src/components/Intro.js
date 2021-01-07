@@ -4,19 +4,6 @@ import Typist from 'react-typist';
 
 
 class Intro extends Component {
-    // state = {
-    //     show: "none",
-    //     showDesc: "none"
-    // }
-
-    // setShow = () => {
-    //     setTimeout(() => { this.setState({ show: "inline" }) }, 2000)
-    //     clearTimeout()
-    // }
-    // setShowDesc = () => {
-    //     setTimeout(() => { this.setState({ showDesc: "inline" }) }, 3000)
-    //     clearTimeout()
-    // }
     render() {
         return (
             <div className="Intro">
@@ -26,7 +13,7 @@ class Intro extends Component {
                         animationInDuration={1000}
                         animationOut="fadeOut"
                         isVisible={true}>
-                        <h1>ALLENE</h1>
+                        <p>ALLENE</p>
                     </Animated>
                 </div>
                 {/* {this.setShow()} */}
@@ -35,16 +22,28 @@ class Intro extends Component {
                         className="lastname"
                         animationIn="slideInLeft"
                         animationInDelay={1000}
-                        animationInDuration={1000}
+                        animationInDuration={1700}
                         isVisible={true}>
                         <p>NORTON</p>
                     </Animated>
                     {/* {this.setShowDesc()} */}
                     <div className="intro-desc">
-                        <Typist avgTypingDelay={30}>
-                            <Typist.Delay ms={3000} />
+                        <Animated
+                            animationIn="fadeIn"
+                            animationInDelay={1800}
+                            animationInDuration={1000}
+                            isVisible={true}>
+                            <Typist
+                                avgTypingDelay={50}
+                                startDelay={3000}
+                                cursor={{
+                                    hideWhenDone: true,
+                                    hideWhenDoneDelay: 5000
+                                }}>
+                                {/* <Typist.Delay ms={3000} /> */}
                             Full stack developer focused on creating smooth applications with clean design.
                     </Typist>
+                        </Animated>
                     </div>
                 </div>
             </div>
