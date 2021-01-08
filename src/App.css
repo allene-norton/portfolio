@@ -124,6 +124,7 @@ td {
   margin: 0%;
 }
 
+
 .show-project p {
   font-size: 5em;
   font-family: 'NATS';
@@ -139,7 +140,7 @@ td {
 }
 
 .project-bar {
-  text-align: left;
+  text-align: center;
   flex: 1;
   padding-right: 10%;
 }
@@ -162,14 +163,25 @@ ul {
   font-size: 2em;
 }
 
+.links button {
+  outline: none;
+  border:none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: 'NATS';
+  font-size: 1em;
+}
+
 .project-btn:hover {
   color: rgb(11, 73, 58);
   transition-duration: 500ms;
 }
 
-.gif {
-  width: 65%;
+.links button:hover {
+  color: rgb(11, 73, 58);
+  transition-duration: 500ms;
 }
+
 
 .project-logo {
   width: 200px;
@@ -177,13 +189,18 @@ ul {
 
 .project-desc li {
   display: inline;
-  padding-right: 10%;
+  padding-right: 5%;
 }
 
 .links {
-  display: flex;
+  text-align: center;
+  font-family: 'NATS';
+  font-size: 2em;
+}
+
+.links ul {
+  padding: 0%;
   margin: 0%;
-  text-align: left;
 }
 
 .live {
@@ -195,3 +212,18 @@ ul {
   flex: 1;
   width: 50%;
 }
+
+.project-desc .tech {
+  font-size: 1.3em;
+  font-family: 'NATS';
+  text-align: center;
+  padding-top: 8%;
+}
+
+.tech-desc{
+  font-size: 1em;
+  line-height: 80%;
+  /* text-align: left; */
+}
+
+
