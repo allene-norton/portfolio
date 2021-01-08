@@ -2,7 +2,7 @@ import { Router, Route, Link } from "react-router";
 import { createBrowserHistory as createHistory } from "history";
 import Home from './containers/Home'
 import './App.css';
-import '/Users/a_norton/Documents/job_search/portfolio/allene-portfolio/node_modules/react-typist/dist/Typist.css'
+import './Typist.css'
 const history = createHistory();
 
 
