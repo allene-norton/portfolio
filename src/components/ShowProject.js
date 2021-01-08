@@ -48,17 +48,22 @@ const descriptions = {
 const ShowProject = (props) => {
     function defineGif() {
         if (props.project === 'resitown') {
-            return <img src={resitown} alt="resitown gif" />
+            return <a href={resitown} target="_blank" rel="noreferrer">Demo GIF</a>
         } else if (props.project === 'viness') {
-            return <img src={resitown} alt="resitown gif" />
+            return <a href={viness} target="_blank" rel="noreferrer">Demo GIF</a>
         } else if (props.project === 'playbase') {
-            return <img src={resitown} alt="resitown gif" />
+            return <a href={playbase} target="_blank" rel="noreferrer">Demo GIF</a>
         } else if (props.project === 'crecipe') {
-            return <img src={resitown} alt="resitown gif" />
+            return <a href={crecipe} target="_blank" rel="noreferrer">Demo GIF</a>
         } else if (props.project === 'journalwave') {
-            return <img src={resitown} alt="resitown gif" />
+            return <a href={journalwave} target="_blank" rel="noreferrer">Demo GIF</a>
         } else {
             return ''
+        }
+    }
+    function testGif() {
+        if (props.project === 'resitown') {
+            return <a href={resitown} target="_blank" rel="noreferrer">Demo GIF</a>
         }
     }
     function defineLogo() {
@@ -104,17 +109,10 @@ const ShowProject = (props) => {
                 <p>
                     {descriptions[props.project].desc}
                 </p>
-                {/* <div className="links"> */}
-                {/* <div className="live"> */}
                 <ul>
                     <li>{renderLink()}</li>
-                    {/* </div> */}
-                    {/* <div className="vid"> */}
                     <li>{renderVideo()}</li>
-                    {/* </div> */}
-                    {/* <div className="gif">
-                        {defineGif()}
-                    </div> */}
+                    <li>{defineGif()}</li>
                 </ul>
             </div>
         </div>
