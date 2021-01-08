@@ -91,14 +91,14 @@ const ShowProject = (props) => {
 
     return (
         <div className="show-project">
-            <Animated
+            {/* <Animated
                 animationIn="pulse"
                 animationInDuration={2000}
                 animationInDelay={8000}
                 animationOut="fadeOut"
                 isVisible={true}>
                 <p>{props.project.toUpperCase()}</p>
-            </Animated>
+            </Animated> */}
             <div className="project-desc">
                 <img className="project-logo" src={defineLogo()} alt={props.project + 'logo'} />
                 <p>
