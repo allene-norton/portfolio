@@ -48,15 +48,15 @@ const descriptions = {
 const ShowProject = (props) => {
     function defineGif() {
         if (props.project === 'resitown') {
-            return resitown
+            return <img src={resitown} alt="resitown gif" />
         } else if (props.project === 'viness') {
-            return viness
+            return <img src={resitown} alt="resitown gif" />
         } else if (props.project === 'playbase') {
-            return playbase
+            return <img src={resitown} alt="resitown gif" />
         } else if (props.project === 'crecipe') {
-            return crecipe
+            return <img src={resitown} alt="resitown gif" />
         } else if (props.project === 'journalwave') {
-            return journalwave
+            return <img src={resitown} alt="resitown gif" />
         } else {
             return ''
         }
@@ -104,12 +104,18 @@ const ShowProject = (props) => {
                 <p>
                     {descriptions[props.project].desc}
                 </p>
-                <p>
-                    {renderLink()}
-                </p>
-                <p>
-                    {renderVideo()}
-                </p>
+                {/* <div className="links"> */}
+                {/* <div className="live"> */}
+                <ul>
+                    <li>{renderLink()}</li>
+                    {/* </div> */}
+                    {/* <div className="vid"> */}
+                    <li>{renderVideo()}</li>
+                    {/* </div> */}
+                    {/* <div className="gif">
+                        {defineGif()}
+                    </div> */}
+                </ul>
             </div>
         </div>
     )

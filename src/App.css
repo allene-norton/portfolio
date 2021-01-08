@@ -174,3 +174,24 @@ ul {
 .project-logo {
   width: 200px;
 }
+
+.project-desc li {
+  display: inline;
+  padding-right: 10%;
+}
+
+.links {
+  display: flex;
+  margin: 0%;
+  text-align: left;
+}
+
+.live {
+  flex: 1;
+  width: 50%;
+}
+
+.vid {
+  flex: 1;
+  width: 50%;
+}
