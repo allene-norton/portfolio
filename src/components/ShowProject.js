@@ -4,6 +4,11 @@ import viness from '../Images/vinessdemogif.gif'
 import playbase from '../Images/playbasedemogif.gif'
 import crecipe from '../Images/crecipedemogif.gif'
 import journalwave from '../Images/journalwavedemogif.gif'
+import resitownlogo from '../Images/resitownlogo.png'
+import vinesslogo from '../Images/vinesslogo.png'
+import playbaselogo from '../Images/playbaselogo.png'
+import crecipelogo from '../Images/crecipelogo.png'
+import journalwavelogo from '../Images/journalwavelogo.png'
 
 
 const descriptions = {
@@ -56,6 +61,21 @@ const ShowProject = (props) => {
             return ''
         }
     }
+    function defineLogo() {
+        if (props.project === 'resitown') {
+            return resitownlogo
+        } else if (props.project === 'viness') {
+            return vinesslogo
+        } else if (props.project === 'playbase') {
+            return playbaselogo
+        } else if (props.project === 'crecipe') {
+            return crecipelogo
+        } else if (props.project === 'journalwave') {
+            return journalwavelogo
+        } else {
+            return ''
+        }
+    }
     function renderLink() {
         console.log(descriptions[props.project].live)
         if (descriptions[props.project].live) {
@@ -80,6 +100,7 @@ const ShowProject = (props) => {
                 <p>{props.project.toUpperCase()}</p>
             </Animated>
             <div className="project-desc">
+                <img className="project-logo" src={defineLogo()} alt={props.project + 'logo'} />
                 <p>
                     {descriptions[props.project].desc}
                 </p>
