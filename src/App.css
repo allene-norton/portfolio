@@ -120,6 +120,7 @@ td {
 
 .project-bar p {
   font-size: 5em;
+  font-weight: 800;
   font-family: 'NATS';
   margin: 0%;
 }
@@ -132,10 +133,10 @@ td {
 }
 
 .Projects .project-desc p {
-  font-family: 'Broadsheet-LDO';
-  font-size: 1.5em;
+  font-family: 'NATS';
+  font-size: 1.8em;
   line-height: 125%;
-  text-align: left;
+  text-align: center;
   padding-top: 15%;
 }
 

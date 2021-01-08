@@ -13,7 +13,7 @@ import journalwavelogo from '../Images/journalwavelogo.png'
 
 const descriptions = {
     resitown: {
-        desc: 'ResiTown is a web application that connects volunteers to volunteer opportunities. I adapted it from an open-source Rails application to meet the needs of my organization, and handled deployment to production.',
+        desc: 'ResiTown is a web application that connects volunteers to volunteer opportunities. I adapted it from an open-source Rails application to meet the needs of my employer, and handled deployment to production.',
         live: 'https://resitown.com',
         video: null,
         tech: '  Rails 6 ⋅ PostgresQL ⋅ Devise ⋅ TailwindCSS ⋅ JavaScript'
