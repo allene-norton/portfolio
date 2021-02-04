@@ -88,3 +88,17 @@ h2 {
         margin-right: 5px;
     }
 }
+
+#down {
+    height: 100px;
+}
+
+#intro-scroll {
+    margin-top: 8em;
+}
+#about-scroll {
+    margin-top: -1em;
+}
+#tech-scroll {
+    margin-top: 6em;
+}

@@ -1,4 +1,6 @@
 import { Animated } from "react-animated-css";
+import Scroll from './Scroll.js'
+
 const Tech = (props) => {
     return (
         <div className="Tech" style={{ height: '100vh' }}>
@@ -56,6 +58,9 @@ const Tech = (props) => {
                         </tr>
                     </tbody>
                 </table>
+            </div>
+            <div id='tech-scroll'>
+                <Scroll />
             </div>
         </div>
     )

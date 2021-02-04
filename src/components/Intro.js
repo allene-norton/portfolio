@@ -1,7 +1,7 @@
 import { Animated } from "react-animated-css";
 import React, { Component } from 'react'
 import Typist from 'react-typist';
-
+import Scroll from './Scroll.js'
 
 class Intro extends Component {
     render() {
@@ -43,6 +43,9 @@ class Intro extends Component {
                                 Full stack developer focused on creating smooth applications with clean design.
                             </Typist>
                         </Animated>
+                    </div>
+                    <div id='intro-scroll'>
+                        <Scroll />
                     </div>
                 </div>
             </div>

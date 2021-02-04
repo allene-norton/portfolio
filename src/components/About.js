@@ -1,4 +1,6 @@
 import { Animated } from "react-animated-css";
+import Scroll from './Scroll.js'
+
 const About = (props) => {
     return (
         <div className="About" style={{ height: '100vh' }}>
@@ -22,6 +24,9 @@ const About = (props) => {
             <p>
                 I am also an accomplished audio engineer and musician, as well as a mother to two adorable cats.
             </p>
+            <div id='about-scroll'>
+                <Scroll />
+            </div>
         </div>
     )
 }
